@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback Form</title>
+</head>
+
+<body>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/oTEiQx88B2U?si=3DKmX9walPR0-e2D"
+		title="YouTube video player" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+	</iframe>
+
+	<form name="feedback">
+		<br />
+		<label for="fname"> First Name: </label>
+		<input name="fname" id="fname" placeholder="anonymous" required />
+		<label for="lname"> Last Name: </label>
+		<input name="lname" id="lname" placeholder="anonymous" required />
+		<label for="mail"> Email: </label>
+		<input type="email" name="mail" id="mail" placeholder="name@domain.com" />
+		<label for="pass"> Password: </label>
+		<input type="password" name="pass" id="pass" />
+		<label for="age"> Age: </label>
+		<input type="number" id="age" name="age" min="1" max="120" />
+
+
+		<br />
+		<br />
+		<p> Appointment: </p>
+		<input type="date" name="appt_date" />
+		<input type="time" name="appt_time" />
+
+		<br />
+		<br />
+		<p> Would you recomend this website? </p>
+		<input type="radio" id="yes" name="recommendation" value="Yes" />
+		<label for="yes"> Yes </label>
+		<input type="radio" id="no" name="recommendation" value="No" />
+		<label for="no"> No </label>
+
+		<br />
+		<p> Choose your favorite website</p>
+		<select name="websites">
+			<option value="Google"> Google </option>
+			<option value="Youtube"> Youtube </option>
+			<option value="Twitter"> Twitter </option>
+			<option value="Facebook"> Facebook </option>
+		</select>
+
+
+		<br />
+		<br />
+		<label for="rating"> Rating </label>
+		<input id="rating" type="range" name="rating" min="1" max="10" />
+
+		<br />
+		<br />
+		<label for="comment"> Comments </label>
+		<br />
+		<textarea name="comment" id="comment" cols="50" rows="10"> </textarea>
+
+		<br />
+		<br />
+		<input type="submit" name="submit" value="Submit" />
+
+	</form>
+</body>
+
+</html>
