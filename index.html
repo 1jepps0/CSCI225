@@ -4,9 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CSCI225 Homepage of Jacob</title>
+	<link rel="stylesheet" href="css/home.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+	<div class="headers">
+		<h1 class="introduction_h1">./Introduction</h1>
+		<h1 class="schedule_h1">./Schedule</h1>
+		<h1 id="assignment" class="assignment_h1">./Assignment</h1>
+		<h1 class="portfolio_h1">./Portfolio</h1>
+		<h1 id="contact" class="contact_h1">./Contact</h1>
+	</div>
 
 	<div class="navbar">
 		<ul>
@@ -18,27 +31,33 @@
 		</ul>
 	</div>
 
+	<div class="screen"><span class="blinking">|</span> </div>
+
 	<div class="introduction">
-		<h1>Introduction</h1>
 		<p>
+			jacob@CSCI225:/home/jacob$ cat introduction<br><br>
 			Hello, my name is Jacob. I'm a Cybersecurity student and SOC (Security Operations Center) analyst. I enjoy
 			learning new things and deep diving into a topic. One of my favorite things to learn about is new and interesting
-			software vulnerabilities.
+			software vulnerabilities. Additionally, I like low level programming involving the C language. I enjoy learning
+			how things work at a fundamental level.<span class="blinking">|</span>
 		</p>
-		<img src="img/zeroday.webp" alt="Illustration of zero-day vulnerability">
 	</div>
 
 	<div class="assignment">
-		<h1 id="assignment">Assignment</h1>
+		<p>
+			jacob@CSCI225:/home/jacob$ cat assignment
+		</p>
 		<ol>
 			<li><a href="Assignment1.pdf">Assignment 1</a></li>
 			<li><a href="Assignment2.pdf">Assignment 2</a></li>
-			<li><a href="ContactMe.html"> Contact </a></li>
+			<li><a href="ContactMe.html"> Contact </a><span class="blinking">|</span></li>
 		</ol>
 	</div>
 
 	<div class="portfolio">
-		<h1>Portfolio</h1>
+		<p>
+			jacob@CSCI225:/home/jacob$ cat portfolio
+		</p>
 		<ul>
 			<li>
 				<a href="https://github.com/1jepps0/Python-LSB-Stego/">Image LSB Steganography Tool</a>
@@ -49,7 +68,7 @@
 				</p>
 				<p><strong>Skills:</strong></p>
 				<ul>
-					<li><mark>Python</mark></li>
+					<li>Python</li>
 					<li>Steganography</li>
 					<li>Pillow</li>
 				</ul>
@@ -66,7 +85,7 @@
 				</p>
 				<p><strong>Skills:</strong></p>
 				<ul>
-					<li><mark>C</mark></li>
+					<li>C</li>
 					<li>libpcap</li>
 					<li>Networking</li>
 					<li>TCP</li>
@@ -81,24 +100,36 @@
 				</p>
 				<p><strong>Skills:</strong></p>
 				<ul>
-					<li><mark>C++</mark></li>
+					<li>C++</li>
 					<li>CMake</li>
-					<li>Game Programming</li>
+					<li>Game Programming<span class="blinking">|</span>
+					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
 
 	<div class="contact">
-		<h1 id="contact">Contact Information</h1>
+
+		<p>
+			jacob@CSCI225:/home/jacob$ cat contact
+		</p>
 		<address>
-			<p><a href="mailto:1jepps10@gmail.com">1jepps10@gmail.com</a></p>
-			<p><a href="https://www.linkedin.com/in/jacob-epps-26b416287/">LinkedIn</a></p>
+
+			<p>
+				<a href="mailto:1jepps10@gmail.com">1jepps10@gmail.com</a>
+				<br>
+				<a href="https://www.linkedin.com/in/jacob-epps-26b416287/">LinkedIn</a><span class="blinking">|</span>
+			</p>
+
+
 		</address>
 	</div>
 
 	<div class="schedule">
-		<h1>Schedule</h1>
+		<p>
+			jacob@CSCI225:/home/jacob$ cat schedule
+		</p>
 		<table border="1">
 			<tr>
 				<th></th>
@@ -177,12 +208,13 @@
 				<td></td>
 				<td></td>
 			</tr>
-		</table>
+		</table><span class="blinking">|</span>
 
-		<footer>
-			<small>&copy; Copyright 2025, Jacob Epps. All rights reserved.</small>
-		</footer>
 	</div>
+	<footer>
+		<small>&copy; Copyright 2025, Jacob Epps. All rights reserved.<span class="blinking">|</span>
+		</small>
+	</footer>
 </body>
 
 </html>

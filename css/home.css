@@ -1,0 +1,247 @@
+* {
+	font-family: "VT323", monospace;
+	font-weight: 100;
+	font-style: normal;
+	color: #20C20E;
+	text-shadow: 0 0 5px #C1C1C1;
+
+
+}
+
+
+p {
+	line-height: 20px;
+	text-align: left;
+	font-size: 16pt;
+}
+
+p::first-letter {
+	font-size: 16pt;
+}
+
+
+/* Box shadow for first paragrph in portfolio
+.portfolio>ul>li:first-child>p:first-of-type {
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.90);
+	border-radius: 8px;
+}
+*/
+
+/* style even rows with a background color */
+table tr:nth-child(even) {
+	background-color: rgba(10, 100, 10, .2);
+}
+
+table {
+	border: 3px solid rgba(0, 255, 0, .1);
+	padding: 3px;
+	vertical-align: middle;
+	empty-cells: initial;
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	text-decoration: underline dashed;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.navbar>ul>li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	margin-right: 10px;
+	font-size: 20pt;
+	text-transform: uppercase;
+}
+
+.navbar {
+	position: fixed;
+	top: 2%;
+	text-align: center;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+body {
+	background-color: black;
+	opacity: 0.8;
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: black;
+	background-image: url("/img/terminal_background_2.png");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.9;
+}
+
+/* scan lines */
+body:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(to bottom,
+			rgba(18, 16, 16, 0) 80%,
+			rgba(0, 0, 0, 0.25) 80%);
+	background-size: 100% 4px;
+	z-index: 1;
+	pointer-events: none;
+}
+
+
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: hsla(0, 0, 0, 1);
+	width: 100%;
+	font-size: 16pt;
+}
+
+.introduction,
+.portfolio,
+.schedule,
+.contact,
+.address,
+.assignment {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	/* border: 3px solid rgba(0, 255, 0, .1); */
+	border-radius: 10px;
+	width: 50%;
+	height: 80%;
+}
+
+
+
+.screen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid rgba(0, 255, 0, .1);
+	border-radius: 10px;
+	width: 50%;
+	height: 80%;
+	padding: 2%;
+
+
+}
+
+.portfolio>ul {
+	list-style: none;
+	font-size: 12pt;
+}
+
+
+.navigation>li {
+	border: 3px solid #fff;
+	border-radius: 5px;
+}
+
+.headers {
+	position: absolute;
+	top: 50%;
+	margin-left: 7%;
+	transform: translate(05%, -50%);
+}
+
+.headers:has(.introduction_h1:hover)~.introduction {
+	display: block;
+
+}
+
+.headers:has(.assignment_h1:hover)~.assignment {
+	display: block;
+}
+
+.headers:has(.portfolio_h1:hover)~.portfolio {
+	display: block;
+}
+
+.headers:has(.contact_h1:hover)~.contact {
+	display: block;
+}
+
+.headers:has(.schedule_h1:hover)~.schedule {
+	display: block;
+}
+
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 5px #C8C8C8;
+	padding: 10px;
+	border: 3px solid rgba(0, 255, 0, .1);
+	border-radius: 10px;
+	opacity: .8;
+	left: 0px;
+	transition: opacity 0.25s ease-in-out;
+	transition: border 0.25s ease-in-out;
+}
+
+h1:hover {
+	transition: opacity 0.25s ease-in-out;
+	transition: border 0.25s ease-in-out;
+	opacity: 1;
+	border: 3px solid rgba(0, 255, 0, .3);
+}
+
+
+/* hide cursor when headers are hovered */
+.headers:hover~.screen .blinking {
+	display: none;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+/* blinking cursor */
+.blinking {
+	font-weight: 100;
+	font-size: 1.2em;
+	animation: blink-caret .75s step-end infinite;
+}
+
+
+@keyframes blink-caret {
+
+	from,
+	to {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
