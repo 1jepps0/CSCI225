@@ -117,7 +117,7 @@ footer {
 	text-align: center;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: hsla(2, 2, 2, 1);
+	background-color: hsla(210, 75%, 50%, 1);
 	width: 100%;
 	font-size: 16pt;
 }
