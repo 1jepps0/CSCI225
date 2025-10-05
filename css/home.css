@@ -1,13 +1,11 @@
+/* font and text styling */
 * {
 	font-family: "VT323", monospace;
 	font-weight: 100;
 	font-style: normal;
 	color: #20C20E;
 	text-shadow: 0 0 5px #C1C1C1;
-
-
 }
-
 
 p {
 	line-height: 20px;
@@ -18,7 +16,6 @@ p {
 p::first-letter {
 	font-size: 16pt;
 }
-
 
 /* Box shadow for first paragrph in portfolio
 .portfolio>ul>li:first-child>p:first-of-type {
@@ -41,6 +38,7 @@ table {
 	text-align: center;
 }
 
+/* link decorations */
 a {
 	text-decoration: none;
 	text-decoration: underline dashed;
@@ -48,6 +46,17 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+/* hide navbar */
+.navbar {
+	position: fixed;
+	top: 2%;
+	text-align: center;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	display: none;
 }
 
 .navbar>ul>li {
@@ -60,21 +69,13 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.navbar {
-	position: fixed;
-	top: 2%;
-	text-align: center;
-	left: 50%;
-	width: 100%;
-	transform: translate(-50%, -50%);
-	display: none;
-}
-
+/* full black background */
 body {
 	background-color: black;
 	opacity: 0.8;
 }
 
+/* background image with opacity */
 body::after {
 	content: "";
 	position: absolute;
@@ -84,7 +85,7 @@ body::after {
 	height: 100%;
 	z-index: -1;
 	background-color: black;
-	background-image: url("/img/terminal_background_2.png");
+	background-image: url("../../CSCI225/img/terminal_background_2.png");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -109,9 +110,7 @@ body:before {
 	pointer-events: none;
 }
 
-
-
-
+/* position footer */
 footer {
 	position: fixed;
 	bottom: 0;
@@ -123,6 +122,7 @@ footer {
 	font-size: 16pt;
 }
 
+/* hide and position sections */
 .introduction,
 .portfolio,
 .schedule,
@@ -140,8 +140,7 @@ footer {
 	height: 80%;
 }
 
-
-
+/* set up middle screen where sections will be displayed */
 .screen {
 	position: absolute;
 	top: 50%;
@@ -152,8 +151,6 @@ footer {
 	width: 50%;
 	height: 80%;
 	padding: 2%;
-
-
 }
 
 .portfolio>ul {
@@ -161,12 +158,12 @@ footer {
 	font-size: 12pt;
 }
 
-
 .navigation>li {
 	border: 3px solid #fff;
 	border-radius: 5px;
 }
 
+/* position headers */
 .headers {
 	position: absolute;
 	top: 50%;
@@ -174,6 +171,7 @@ footer {
 	transform: translate(05%, -50%);
 }
 
+/* unhide sections when hovered */
 .headers:has(.introduction_h1:hover)~.introduction {
 	display: block;
 
@@ -195,6 +193,7 @@ footer {
 	display: block;
 }
 
+
 h1 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -208,6 +207,7 @@ h1 {
 	transition: border 0.25s ease-in-out;
 }
 
+/* h1 hover effects */
 h1:hover {
 	transition: opacity 0.25s ease-in-out;
 	transition: border 0.25s ease-in-out;
@@ -218,6 +218,16 @@ h1:hover {
 
 /* hide cursor when headers are hovered */
 .headers:hover~.screen .blinking {
+	display: none;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+/* hide user when headers are hovered */
+.headers:hover~.screen .disappear {
 	display: none;
 	display: inline-block;
 	width: 0;
