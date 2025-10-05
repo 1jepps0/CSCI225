@@ -155,19 +155,26 @@ footer {
 
 .portfolio>ul {
 	list-style: none;
-	font-size: 12pt;
+	font-size: 13pt;
+	margin: 0;
+}
+
+.portfolio>ul>li>p {
+	font-size: 13pt;
 }
 
 .navigation>li {
 	border: 3px solid #fff;
 	border-radius: 5px;
+
 }
+
 
 /* position headers */
 .headers {
 	position: absolute;
 	top: 50%;
-	margin-left: 7%;
+	margin-left: 4%;
 	transform: translate(05%, -50%);
 }
 
