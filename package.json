@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "http-server": "^14.1.1"
+  },
+  "name": "csci225",
+  "description": "Homework for CSCI225",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1jepps0/CSCI225.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1jepps0/CSCI225/issues"
+  },
+  "homepage": "https://github.com/1jepps0/CSCI225#readme"
+}
